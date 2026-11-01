@@ -13,3 +13,4 @@ A foundational project introducing C programming, the compilation process, and b
 `), returning 0.
 - **6-size.c**: A C program that prints the size of various fundamental data types (`char`, `int`, `long int`, `long long int`, `float`) using the `sizeof` operator.
 - **100-intel**: A 2-line Bash script that generates assembly code in Intel syntax from a C source file using `gcc -S -masm=intel $CFILE`.
+- **101-quote.c**: A C program that prints a specific quote directly to standard error (`stderr`) using the low-level `write` system call, returning 1 without using `printf` or `puts`.
