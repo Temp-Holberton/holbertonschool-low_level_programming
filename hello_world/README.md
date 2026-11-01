@@ -9,3 +9,5 @@ A foundational project introducing C programming, the compilation process, and b
 - **2-assembler**: A 2-line Bash script that generates assembly code from a C source file using `gcc -S $CFILE`, producing a `.s` file.
 - **3-name**: A 2-line Bash script that compiles a C source file into a custom-named executable called `cisfun` using `gcc $CFILE -o cisfun`.
 - **4-puts.c**: A C program that prints a specific quote using the `puts` function and returns 0, written following Betty style.
+- **5-printf.c**: A C program that prints a specific text string using the `printf` function with an explicit newline character (`
+`), returning 0.
