@@ -11,3 +11,4 @@ A foundational project introducing C programming, the compilation process, and b
 - **4-puts.c**: A C program that prints a specific quote using the `puts` function and returns 0, written following Betty style.
 - **5-printf.c**: A C program that prints a specific text string using the `printf` function with an explicit newline character (`
 `), returning 0.
+- **6-size.c**: A C program that prints the size of various fundamental data types (`char`, `int`, `long int`, `long long int`, `float`) using the `sizeof` operator.
