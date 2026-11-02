@@ -3,9 +3,10 @@
 #include <stdio.h>
 
 /**
-- main - Entry point
+ * main - Assigns a random number and prints whether
+ *        it is positive, negative, or zero.
  *
-- Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
