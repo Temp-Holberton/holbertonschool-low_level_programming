@@ -10,3 +10,4 @@ A foundational project exploring C control structures, conditional statements (i
 - **3-print_alphabets.c**: A C program that prints the alphabet in lowercase followed by uppercase, ending with a new line, using `putchar` exactly three times.
 - **4-print_alphabt.c**: A C program that prints the lowercase alphabet excluding 'e' and 'q', followed by a new line, using `putchar` exactly twice.
 - **5-print_numbers.c**: A C program that prints all single-digit numbers of base 10 starting from 0, followed by a new line.
+- **6-print_numberz.c**: A C program that prints all single-digit base 10 numbers using `int` variables only and `putchar` exactly twice.
