@@ -15,3 +15,4 @@ A foundational project exploring C control structures, conditional statements (i
 - **8-print_base16.c**: A C program that prints all numbers of base 16 in lowercase (`0-9`, `a-f`) followed by a new line, using `putchar` exactly three times.
 - **9-print_comb.c**: A C program that prints all single-digit number combinations separated by `, ` using only `int` variables and `putchar` four times maximum.
 - **100-print_comb3.c**: An advanced C program that prints all unique two-digit combinations in ascending order using only `int` variables and `putchar` five times maximum.
+- **101-print_comb4.c**: An advanced C program that prints all unique three-digit combinations in ascending order using only `int` variables and `putchar` six times maximum.
