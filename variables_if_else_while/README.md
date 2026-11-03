@@ -16,3 +16,4 @@ A foundational project exploring C control structures, conditional statements (i
 - **9-print_comb.c**: A C program that prints all single-digit number combinations separated by `, ` using only `int` variables and `putchar` four times maximum.
 - **100-print_comb3.c**: An advanced C program that prints all unique two-digit combinations in ascending order using only `int` variables and `putchar` five times maximum.
 - **101-print_comb4.c**: An advanced C program that prints all unique three-digit combinations in ascending order using only `int` variables and `putchar` six times maximum.
+- **102-print_comb5.c**: An advanced C program that prints all unique combinations of two two-digit numbers (00 to 99) using only `int` variables and `putchar` eight times maximum.
