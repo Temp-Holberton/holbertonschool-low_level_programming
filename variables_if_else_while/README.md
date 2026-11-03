@@ -12,3 +12,4 @@ A foundational project exploring C control structures, conditional statements (i
 - **5-print_numbers.c**: A C program that prints all single-digit numbers of base 10 starting from 0, followed by a new line.
 - **6-print_numberz.c**: A C program that prints all single-digit base 10 numbers using `int` variables only and `putchar` exactly twice.
 - **7-print_tebahpla.c**: A C program that prints the lowercase alphabet in reverse order (`z` to `a`) followed by a new line, using `putchar` exactly twice.
+- **8-print_base16.c**: A C program that prints all numbers of base 16 in lowercase (`0-9`, `a-f`) followed by a new line, using `putchar` exactly three times.
