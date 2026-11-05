@@ -8,3 +8,4 @@ A foundational project exploring nested loops, functions, header files, and cust
 - **1-alphabet.c**: A function that prints the alphabet in lowercase followed by a new line, using `_putchar` exactly twice.
 - **2-print_alphabet_x10.c**: A function that prints the lowercase alphabet 10 times using nested loops and `_putchar` exactly twice.
 - **2-print_alphabet_x10.c**: A function that prints the lowercase alphabet 10 times using nested loops and `_putchar` exactly twice.
+- **3-islower.c**: A function that checks for lowercase characters, returning 1 if true and 0 otherwise.
