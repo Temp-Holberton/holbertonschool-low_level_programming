@@ -7,3 +7,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 ## Running the Program
 ./calculator
+
+## Supported Operations
+- Addition (Choice 1)
