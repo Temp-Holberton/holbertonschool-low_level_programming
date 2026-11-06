@@ -6,3 +6,4 @@ Advanced C programming tasks focused on mathematical algorithms and loops.
 
 - **101-natural.c**: Computes and prints the sum of all multiples of 3 or 5 below 1024.
 - **102-fibonacci.c**: A program that prints the first 50 Fibonacci numbers starting with 1 and 2.
+- **103-fibonacci.c**: A program that finds and prints the sum of even-valued Fibonacci terms under 4,000,000.
