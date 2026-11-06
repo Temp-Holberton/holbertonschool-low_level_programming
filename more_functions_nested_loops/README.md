@@ -14,3 +14,4 @@ A continuation of C programming fundamentals focusing on nested loops, functions
 - **7-print_diagonal.c**: A function that draws a diagonal line using backslashes and spaces in the terminal.
 - **8-print_square.c**: A function that prints a square of '#' characters given a specified size.
 - **9-fizz_buzz.c**: A program that prints numbers from 1 to 100 applying Fizz-Buzz rules for multiples of 3 and 5.
+- **10-print_triangle.c**: A function that prints a right-aligned triangle of '#' characters given a specified size.
