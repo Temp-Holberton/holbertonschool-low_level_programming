@@ -17,3 +17,4 @@ A foundational project exploring nested loops, functions, header files, and cust
 - **9-times_table.c**: A function that prints the 9 times table starting from 0 with correct column spacing.
 - **10-add.c**: A function that adds two integers and returns the result.
 - **11-print_to_98.c**: A function that prints all integers from n to 98 in ascending or descending order.
+- **100-times_table.c**: An advanced function that prints the n times table up to 15 using `_putchar`.
