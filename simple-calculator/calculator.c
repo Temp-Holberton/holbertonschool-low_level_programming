@@ -28,7 +28,7 @@ int main(void)
 		{
 			printf("Bye!\n");
 		}
-		else if (choice == 1)
+		else if (choice >= 1 && choice <= 4)
 		{
 			printf("A: ");
 			if (scanf("%d", &a) != 1)
@@ -36,31 +36,20 @@ int main(void)
 			printf("B: ");
 			if (scanf("%d", &b) != 1)
 				break;
-			printf("Result: %d\n", a + b);
-		}
-		else if (choice == 2)
-		{
-			printf("A: ");
-			if (scanf("%d", &a) != 1)
-				break;
-			printf("B: ");
-			if (scanf("%d", &b) != 1)
-				break;
-			printf("Result: %d\n", a - b);
-		}
-		else if (choice == 3)
-		{
-			printf("A: ");
-			if (scanf("%d", &a) != 1)
-				break;
-			printf("B: ");
-			if (scanf("%d", &b) != 1)
-				break;
-			printf("Result: %d\n", a * b);
-		}
-		else if (choice == 4)
-		{
-			printf("Operation stub\n");
+
+			if (choice == 1)
+				printf("Result: %d\n", a + b);
+			else if (choice == 2)
+				printf("Result: %d\n", a - b);
+			else if (choice == 3)
+				printf("Result: %d\n", a * b);
+			else if (choice == 4)
+			{
+				if (b == 0)
+					printf("Error: division by zero\n");
+				else
+					printf("Result: %g\n", (double)a / b);
+			}
 		}
 		else
 		{
