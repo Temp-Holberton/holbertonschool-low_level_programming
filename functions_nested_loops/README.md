@@ -15,3 +15,4 @@ A foundational project exploring nested loops, functions, header files, and cust
 - **7-print_last_digit.c**: A function that prints and returns the last digit of a number.
 - **8-24_hours.c**: A function that prints every minute of the day from 00:00 to 23:59.
 - **9-times_table.c**: A function that prints the 9 times table starting from 0 with correct column spacing.
+- **10-add.c**: A function that adds two integers and returns the result.
