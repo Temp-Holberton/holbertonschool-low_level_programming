@@ -48,7 +48,17 @@ int main(void)
 				break;
 			printf("Result: %d\n", a - b);
 		}
-		else if (choice >= 3 && choice <= 4)
+		else if (choice == 3)
+		{
+			printf("A: ");
+			if (scanf("%d", &a) != 1)
+				break;
+			printf("B: ");
+			if (scanf("%d", &b) != 1)
+				break;
+			printf("Result: %d\n", a * b);
+		}
+		else if (choice == 4)
 		{
 			printf("Operation stub\n");
 		}
