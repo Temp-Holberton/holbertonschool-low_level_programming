@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point for the simple calculator program.
+ * main - Entry point for the simple calculator program with error recovery.
  *
  * Return: Always 0.
  */
@@ -9,6 +9,7 @@ int main(void)
 {
 	int choice;
 	int a, b;
+	int c;
 
 	printf("Simple Calculator\n");
 	do {
@@ -21,7 +22,10 @@ int main(void)
 
 		if (scanf("%d", &choice) != 1)
 		{
-			break;
+			printf("Invalid choice\n");
+			while ((c = getchar()) != '\n' && c != EOF)
+				;
+			continue;
 		}
 
 		if (choice == 0)
@@ -31,11 +35,22 @@ int main(void)
 		else if (choice >= 1 && choice <= 4)
 		{
 			printf("A: ");
-			if (scanf("%d", &a) != 1)
-				break;
+			while (scanf("%d", &a) != 1)
+			{
+				printf("Invalid number\n");
+				while ((c = getchar()) != '\n' && c != EOF)
+					;
+				printf("A: ");
+			}
+
 			printf("B: ");
-			if (scanf("%d", &b) != 1)
-				break;
+			while (scanf("%d", &b) != 1)
+			{
+				printf("Invalid number\n");
+				while ((c = getchar()) != '\n' && c != EOF)
+					;
+				printf("B: ");
+			}
 
 			if (choice == 1)
 				printf("Result: %d\n", a + b);

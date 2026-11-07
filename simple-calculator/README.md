@@ -1,6 +1,6 @@
 # Simple Calculator
 
-A terminal-based interactive calculator built in C.
+A terminal-based interactive calculator built in C with robust input error recovery.
 
 ## Compilation
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
@@ -14,6 +14,6 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 - Multiplication (Choice 3)
 - Division (Choice 4, with zero-division handling)
 
-## Numeric Behavior
-- Operands are processed as integers for addition, subtraction, and multiplication.
-- Division casts operands to floating-point numbers to provide accurate decimal results.
+## Numeric Behavior & Error Handling
+- Operands are processed as integers for basic operations, and division yields decimal results.
+- Robust input validation discards invalid non-numeric tokens from `stdin` to prevent infinite loops.
