@@ -8,3 +8,7 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-long-long filename.c -o outp
 
 ## Tasks
 - baseline_loop.c: Measures execution time for 100,000,000 loop iterations using clock(). Metrics recorded in baseline_loop-metrics.md.
+
+## Tasks
+- **baseline_loop.c**: Measures execution time for 100,000,000 loop iterations using `clock()`. Metrics recorded in `baseline_loop-metrics.md`.
+- **comparison_algorithms.c**: Compares execution time between an $O(n^2)$ naive algorithm and an $O(n)$ single-pass algorithm. Metrics recorded in `comparison_algorithms-metrics.md`.
