@@ -5,3 +5,4 @@ This repository contains solutions for the advanced C programming tasks focusing
 ## Tasks
 
 * **0. memset** (`0-memset.c`): A function that fills the first `n` bytes of the memory area pointed to by `s` with the constant byte `b`.
+* **1. memcpy** (): A function that copies  bytes from memory area  to memory area .
