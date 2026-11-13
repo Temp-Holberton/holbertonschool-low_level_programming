@@ -12,3 +12,4 @@ This repository contains solutions for the advanced C programming tasks focusing
 * **5. strstr** (): A function that locates a substring.
 * **6. Chess is mental torture** (`7-print_chessboard.c`): A function that prints the chessboard.
 * **7. The line of life is a ragged diagonal between duty and desire** (`8-print_diagsums.c`): A function that prints the sum of the two diagonals of a square matrix of integers.
+* **8. Double pointer, double fun** (`100-set_string.c`): A function that sets the value of a pointer to a char.
