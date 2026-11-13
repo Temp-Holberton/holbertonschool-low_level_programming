@@ -11,3 +11,4 @@ This repository contains solutions for the advanced C programming tasks focusing
 * **4. strpbrk** (): A function that searches a string for any of a set of bytes.
 * **5. strstr** (): A function that locates a substring.
 * **6. Chess is mental torture** (`7-print_chessboard.c`): A function that prints the chessboard.
+* **7. The line of life is a ragged diagonal between duty and desire** (`8-print_diagsums.c`): A function that prints the sum of the two diagonals of a square matrix of integers.
