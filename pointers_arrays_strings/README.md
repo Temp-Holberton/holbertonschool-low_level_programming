@@ -10,3 +10,4 @@ This repository contains solutions for the advanced C programming tasks focusing
 * **3. strspn** (): A function that gets the length of a prefix substring.
 * **4. strpbrk** (): A function that searches a string for any of a set of bytes.
 * **5. strstr** (): A function that locates a substring.
+* **6. Chess is mental torture** (`7-print_chessboard.c`): A function that prints the chessboard.
