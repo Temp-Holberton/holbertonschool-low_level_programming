@@ -9,11 +9,8 @@
  */
 int count_words(char *str)
 {
-	int i, words, in_word;
+	int i = 0, words = 0, in_word = 0;
 
-	i = 0;
-	words = 0;
-	in_word = 0;
 	while (str[i] != '\0')
 	{
 		if (str[i] != ' ')
@@ -34,6 +31,21 @@ int count_words(char *str)
 }
 
 /**
+ * free_tab - Frees a 2D array of strings upon allocation failure.
+ * @tab: The array to free.
+ * @size: Number of elements to free.
+ */
+void free_tab(char **tab, int size)
+{
+	while (size > 0)
+	{
+		size--;
+		free(tab[size]);
+	}
+	free(tab);
+}
+
+/**
  * strtow - Splits a string into words.
  * @str: The string to split.
  *
@@ -42,50 +54,31 @@ int count_words(char *str)
 char **strtow(char *str)
 {
 	char **tab;
-	int i, j, k, len, words, w;
+	int i = 0, w = 0, words, len, j, k;
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
-
 	words = count_words(str);
 	if (words == 0)
 		return (NULL);
-
 	tab = malloc(sizeof(char *) * (words + 1));
 	if (tab == NULL)
 		return (NULL);
-
-	i = 0;
-	w = 0;
 	while (str[i] != '\0' && w < words)
 	{
 		if (str[i] != ' ')
 		{
-			len = 0;
-			j = i;
+			len = 0, j = i;
 			while (str[j] != ' ' && str[j] != '\0')
-			{
-				len++;
-				j++;
-			}
+				len++, j++;
 			tab[w] = malloc(sizeof(char) * (len + 1));
 			if (tab[w] == NULL)
 			{
-				while (w > 0)
-				{
-					w--;
-					free(tab[w]);
-				}
-				free(tab);
+				free_tab(tab, w);
 				return (NULL);
 			}
-			k = 0;
-			while (k < len)
-			{
+			for (k = 0; k < len; k++, i++)
 				tab[w][k] = str[i];
-				k++;
-				i++;
-			}
 			tab[w][k] = '\0';
 			w++;
 		}
