@@ -4,3 +4,4 @@
 * **2. _calloc** (`2-calloc.c`): A function that allocates zero-initialized memory for an array using `malloc`.
 * **3. array_range** (`3-array_range.c`): A function that creates an array of integers from `min` to `max` inclusive.
 * **4. _realloc** (`100-realloc.c`): A function that reallocates a memory block using `malloc` and `free`.
+* **5. We must accept finite disappointment, but never lose infinite hope** (`101-mul.c`): A program that multiplies two positive base-10 numbers.
