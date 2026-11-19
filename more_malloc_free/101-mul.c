@@ -78,6 +78,26 @@ void multiply_digits(char *n1, char *n2, int *res)
 }
 
 /**
+ * print_result - Prints non-leading digits of res followed by newline.
+ * @res: Array containing product digits.
+ * @total_len: Total length of res.
+ */
+void print_result(int *res, int total_len)
+{
+	int i, started = 0;
+
+	for (i = 0; i < total_len; i++)
+	{
+		if (res[i] != 0 || started || i == total_len - 1)
+		{
+			started = 1;
+			_putchar(res[i] + '0');
+		}
+	}
+	_putchar('\n');
+}
+
+/**
  * main - Multiplies two positive numbers passed as arguments.
  * @argc: Argument count.
  * @argv: Argument vector.
@@ -87,7 +107,7 @@ void multiply_digits(char *n1, char *n2, int *res)
 int main(int argc, char *argv[])
 {
 	int *res;
-	int total_len, i = 0, started = 0;
+	int total_len, i = 0;
 
 	if (argc != 3 || !check_digits(argv[1]) || !check_digits(argv[2]))
 		print_error();
@@ -104,16 +124,7 @@ int main(int argc, char *argv[])
 	}
 
 	multiply_digits(argv[1], argv[2], res);
-
-	for (i = 0; i < total_len; i++)
-	{
-		if (res[i] != 0 || started || i == total_len - 1)
-		{
-			started = 1;
-			_putchar(res[i] + '0');
-		}
-	}
-	_putchar('\n');
+	print_result(res, total_len);
 	free(res);
 	return (0);
 }
