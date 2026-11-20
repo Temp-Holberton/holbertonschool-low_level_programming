@@ -2,3 +2,4 @@
 * **0. Poppy** (`dog.h`): Defines `struct dog` with `name`, `age`, and `owner`.
 * **1. A dog is the only thing on earth that loves you more than you love yourself** (`1-init_dog.c`): Initializes a `struct dog` variable.
 * **1. A dog is the only thing on earth that loves you more than you love yourself** (`1-init_dog.c`): Initializes a `struct dog` variable.
+* **2. A dog will teach you unconditional love. If you can have that in your life, things won't be too bad** (`2-print_dog.c`): Prints a `struct dog`.
