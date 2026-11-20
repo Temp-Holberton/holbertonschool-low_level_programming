@@ -16,5 +16,7 @@ int _check_divisor(int n, int d);
 int is_palindrome(char *s);
 int _strlen_rec(char *s);
 int _check_pal(char *s, int left, int right);
+int wildcmp(char *s1, char *s2);
+char *_skip_stars(char *s2);
 
 #endif /* MAIN_H */

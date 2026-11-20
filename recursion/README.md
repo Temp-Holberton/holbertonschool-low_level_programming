@@ -7,3 +7,4 @@
 * **5. Your subconscious is looking for the dreamer** (`5-sqrt_recursion.c`): Returns the natural square root of a number using recursion.
 * **6. Inception. Is it possible?** (`6-is_prime_number.c`): Returns 1 if the input integer is prime, otherwise 0 using recursion.
 * **7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything** (`100-is_palindrome.c`): Returns 1 if a string is a palindrome, 0 otherwise, using recursion.
+* **8. Inception. Now, before you bother telling me it's impossible...** (`101-wildcmp.c`): Compares two strings with wildcard `*` support using recursion.
