@@ -6,3 +6,4 @@
 * **4. Once an idea has taken hold of the brain it's almost impossible to eradicate** (`4-pow_recursion.c`): Returns x raised to the power y using recursion.
 * **5. Your subconscious is looking for the dreamer** (`5-sqrt_recursion.c`): Returns the natural square root of a number using recursion.
 * **6. Inception. Is it possible?** (`6-is_prime_number.c`): Returns 1 if the input integer is prime, otherwise 0 using recursion.
+* **7. They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything** (`100-is_palindrome.c`): Returns 1 if a string is a palindrome, 0 otherwise, using recursion.
