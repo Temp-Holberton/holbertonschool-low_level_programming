@@ -2,13 +2,16 @@
 #include <stdlib.h>
 
 /**
- * print_error - Prints "Error\n" using _putchar and exits with status 98.
+ * print_error - Frees optional buffer, prints "Error\n", and exits with 98.
+ * @buf: Optional heap pointer to free before exiting, or NULL.
  */
-void print_error(void)
+void print_error(int *buf)
 {
 	char *msg = "Error\n";
 	int i = 0;
 
+	if (buf != NULL)
+		free(buf);
 	while (msg[i] != '\0')
 	{
 		_putchar(msg[i]);
@@ -110,12 +113,12 @@ int main(int argc, char *argv[])
 	int total_len, i = 0;
 
 	if (argc != 3 || !check_digits(argv[1]) || !check_digits(argv[2]))
-		print_error();
+		print_error(NULL);
 
 	total_len = _strlen(argv[1]) + _strlen(argv[2]);
 	res = malloc(sizeof(int) * total_len);
 	if (res == NULL)
-		print_error();
+		print_error(NULL);
 
 	while (i < total_len)
 	{
