@@ -7,7 +7,7 @@
  *
  * Return: Natural square root of n, or -1 if none exists.
  */
-static int _find_sqrt(int n, int guess)
+int _find_sqrt(int n, int guess)
 {
 	if (guess > n / guess)
 		return (-1);
