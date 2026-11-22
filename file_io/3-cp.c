@@ -19,6 +19,39 @@ void close_fd(int fd)
 }
 
 /**
+ * copy_content - Copies data in 1024-byte chunks between two descriptors.
+ * @fd_from: Source file descriptor.
+ * @fd_to: Destination file descriptor.
+ * @from_name: Source filename for error reporting.
+ * @to_name: Destination filename for error reporting.
+ */
+void copy_content(int fd_from, int fd_to, char *from_name, char *to_name)
+{
+	ssize_t n_read, n_written;
+	char buf[BUF_SIZE];
+
+	while ((n_read = read(fd_from, buf, BUF_SIZE)) > 0)
+	{
+		n_written = write(fd_to, buf, n_read);
+		if (n_written < 0 || n_written != n_read)
+		{
+			close_fd(fd_from);
+			close_fd(fd_to);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", to_name);
+			exit(99);
+		}
+	}
+
+	if (n_read < 0)
+	{
+		close_fd(fd_from);
+		close_fd(fd_to);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", from_name);
+		exit(98);
+	}
+}
+
+/**
  * main - Copies the contents of one file to another file.
  * @argc: Argument count.
  * @argv: Argument vector.
@@ -28,8 +61,6 @@ void close_fd(int fd)
 int main(int argc, char **argv)
 {
 	int fd_from, fd_to;
-	ssize_t n_read, n_written;
-	char buf[BUF_SIZE];
 
 	if (argc != 3)
 	{
@@ -52,26 +83,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	while ((n_read = read(fd_from, buf, BUF_SIZE)) > 0)
-	{
-		n_written = write(fd_to, buf, n_read);
-		if (n_written < 0 || n_written != n_read)
-		{
-			close_fd(fd_from);
-			close_fd(fd_to);
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
-		}
-	}
-
-	if (n_read < 0)
-	{
-		close_fd(fd_from);
-		close_fd(fd_to);
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-
+	copy_content(fd_from, fd_to, argv[1], argv[2]);
 	close_fd(fd_from);
 	close_fd(fd_to);
 	return (0);
