@@ -4,3 +4,4 @@
 * **2. To hell with circumstances; I create opportunities** (`2-int_index.c`): Searches an integer array for the first element matching a callback predicate.
 * **2. To hell with circumstances; I create opportunities** (`2-int_index.c`): Searches an integer array for the first element matching a callback predicate.
 * **3. A goal is not always meant to be reached, it often serves simply as something to aim at** (`3-main.c`, `3-op_functions.c`, `3-get_op_func.c`, `3-calc.h`): Function-pointer-driven CLI calculator.
+* **4. Most hackers are young because young people tend to be adaptable...** (`100-main_opcodes.c`): Prints the hexadecimal opcodes of the `main` function.
