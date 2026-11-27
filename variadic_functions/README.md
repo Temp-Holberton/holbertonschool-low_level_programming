@@ -3,3 +3,4 @@
 * **1. To be is to be the value of a variable** (`1-print_numbers.c`): Prints a variadic list of integers separated by a given string.
 * **2. One woman's constant is another woman's variable** (`2-print_strings.c`): Prints a variadic list of strings, printing `(nil)` for `NULL` strings.
 * **3. To be is a to be the value of a variable** (`3-print_all.c`): Variadic printer supporting `c`, `i`, `f`, and `s` format specifiers.
+* **4. Real programmers can write assembly code in any language** (`100-hello_world.asm`): 64-bit x86-64 NASM program printing `Hello, World` via the `write` syscall.
